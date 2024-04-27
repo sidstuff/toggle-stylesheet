@@ -1,6 +1,6 @@
 # toggle-stylesheet
 
-The server-side (PHP) and client-side (JS) approach to switching between stylesheets.
+The server-side (PHP) and client-side (JS) approaches to switching between stylesheets.
 
 ## Usage
 
