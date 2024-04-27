@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en-US">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,width=device-width">
+
+<title>Themes</title>
+
+<link id="theme" rel="stylesheet" href="default.css">
+
+</head>
+
+<body onload="setTheme()">
+
+<h1>Set Theme:<h1>
+<button onclick="changeTheme(this)" stylesheet="default.css">Default</button><br>
+<button onclick="changeTheme(this)" stylesheet="red.css">Red</button><br>
+<button onclick="changeTheme(this)" stylesheet="green.css">Green</button><br>
+<button onclick="changeTheme(this)" stylesheet="blue.css">Blue</button><br>
+
+<script>
+
+function setTheme() {
+	if (localStorage.getItem("stylesheet") !== null) {
+		document.getElementById("theme").setAttribute("href", localStorage.getItem("stylesheet"));
+	}
+}
+
+function changeTheme(obj) {
+	localStorage.setItem("stylesheet", obj.getAttribute('stylesheet'));
+	document.getElementById("theme").setAttribute("href", localStorage.getItem("stylesheet")); 
+}
+
+</script>
+
+</body>
+
+</html>
