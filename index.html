@@ -24,14 +24,14 @@
 <script>
 
 function setTheme() {
-	if (localStorage.getItem("stylesheet") !== null) {
-		document.getElementById("theme").setAttribute("href", localStorage.getItem("stylesheet"));
-	}
+	let stylesheet = localStorage.getItem("stylesheet");
+	if (stylesheet !== null) { document.getElementById("theme").setAttribute("href", stylesheet); };
 }
 
 function changeTheme(obj) {
-	localStorage.setItem("stylesheet", obj.getAttribute('stylesheet'));
-	document.getElementById("theme").setAttribute("href", localStorage.getItem("stylesheet")); 
+	let stylesheet = obj.getAttribute("stylesheet");
+	localStorage.setItem("stylesheet", stylesheet);
+	document.getElementById("theme").setAttribute("href", stylesheet); 
 }
 
 </script>
