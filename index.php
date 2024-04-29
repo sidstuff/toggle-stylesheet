@@ -36,7 +36,7 @@ if (isset($_GET["theme"])) {                                                  //
 
 <body>
 
-<h1>Set Theme:<h1>
+<h1>Change Theme:<h1>
 <a href="?theme=default">Default</a><br>
 <a href="?theme=red">Red</a><br>
 <a href="?theme=green">Green</a><br>
